@@ -1,0 +1,10 @@
+[project]
+name = "AgentFlow"
+version = "0.1.0"
+description = "Minimalist async agent/workflow framework (Python port of PocketFlow)"
+authors = [{name = "Engr. Stephen Ezekwem", email = "stephen.ezekwem@gmail.com"}]
+requires-python = ">=3.8"
+dependencies = [
+    "openai",
+    "google-generativeai"
+]
