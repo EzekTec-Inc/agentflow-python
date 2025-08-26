@@ -10,21 +10,23 @@ The core library is named `agentflow` and is located in the `agentflow-python/ag
 
 ```mermaid
 flowchart TD
-    subgraph AgentFlow    Python
-        A1[Agent]
-        A2[Agent]
-        A3[Agent]
+    subgraph AgentFlow[Python Agent System]
+        A1[Agent 1]
+        A2[Agent 2]
+        A3[Agent 3]
         WF[Workflow/Flow Engine]
-        STORE[Shared Store (dict)]
+        STORE[Shared Store dict]
     end
+    
     User((User))
-    User -- API/CLI --> WF
-    WF -- manages --> A1
-    WF -- manages --> A2
-    WF -- manages --> A3
-    A1 -- reads/writes --> STORE
-    A2 -- reads/writes --> STORE
-    A3 -- reads/writes --> STORE
+    
+    User -->|API/CLI| WF
+    WF -->|manages| A1
+    WF -->|manages| A2
+    WF -->|manages| A3
+    A1 -->|reads/writes| STORE
+    A2 -->|reads/writes| STORE
+    A3 -->|reads/writes| STORE
 ```
 
 - **Agents**: Specialized async units (LLM, RAG, tool-calling, etc.) that process tasks.
