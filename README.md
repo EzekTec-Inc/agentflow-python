@@ -1,6 +1,6 @@
 # agentflow-python
 
-**agentflow-python** is a minimalist, async-first Python framework for building, orchestrating, and managing AI agents and workflows. It is inspired by the Rust [agentflow](https://<_>) crate, created by Stephen Ezekwem (stephen.ezekwem@gmail.com), and brings its composable, language-agnostic patterns to Python.
+**agentflow-python** is a minimalist, async-first Python framework for building, orchestrating, and managing AI agents and workflows. It is inspired by the Rust [agentflow](https://<_>) crate, created by Stephen Ezekwem, and brings its composable, language-agnostic patterns to Python.
 
 The core library is named `agentflow` and is located in the `agentflow-python/agentflow/` directory. Example scripts are in `agentflow-python/examples/`. The package is not yet published to PyPI, but can be used directly from source.
 
